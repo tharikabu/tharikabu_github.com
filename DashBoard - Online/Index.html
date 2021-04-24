@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Dasboard Menu -->
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-danger"><i class="fa fa-volleyball-ball text-white text-danger"></i> ABU
+                THARIK</a>
+            <button class="navbar-toggler" data-target="#uinav" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="uinav" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index.html"><i class="fa fa-chart-line text-muted"></i> Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Tasks.html"><i class="fa fa-tasks text-muted"></i> Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Categories.html"><i class="fa fa-sitemap text-muted"></i>
+                            Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Employees.html"><i class="fa fa-users text-muted"></i> Employees</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" class="dropdown-toggle" data-toggle="dropdown"
+                            data-target="#drp"><i class="fa fa-sign-in-alt text-muted"></i> Tharik &nbsp; <i
+                                class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-menu" id="drp">
+                            <a href="Profile.html" class=" dropdown-item"><i
+                                    class="fa fa-user-tag"></i>&nbsp;&nbsp;Profile</a>
+                            <a href="Settings.html" class=" dropdown-item"><i
+                                    class="fa fa-user-cog"></i>&nbsp;&nbsp;Settings</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Logout.html"><i class="fa fa-sign-out-alt text-muted"></i> LogOut</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Dashboard Section -->
+    <section class="p-2 bg-teal">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 animated flip">
+                    <h2 class=" text-white"><i class="fa fa-chart-bar text-white"></i> Dashboard</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Button Section -->
+    <section class="p-3 bg-light">
+        <div class="container">
+            <div class="row animated flipInX delay-1s">
+                <div class="col-md-4">
+                    <a href="#addtask" class="btn btn-primary btn-block" data-target="#addtask" data-toggle="modal"><i
+                            class="fa fa-plus-circle text-white"></i> ADD TASK</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="btn btn-success btn-block" data-target="#addcategory" data-toggle="modal"><i
+                            class="fa fa-plus-circle text-white"></i> ADD CATEGORY</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="btn btn-warning btn-block" data-target="#addemployee" data-toggle="modal"><i
+                            class="fa fa-plus-circle text-white"></i> ADD EMPLOYEE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Section -->
+    <div id="addtask" class="modal fade">
+        <div class="modal-dialog modal-lg animated flipInX">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">ADD TASK</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form>
+                        <div class=" form-group">
+                            <label>Title :</label>
+                            <input type="text" class="form-control" placeholder="title">
+                        </div>
+                        <div class=" form-group">
+                            <div class="form-group">
+                                <label>Category :</label>
+                                <select class="form-control" aria-placeholder="sds">
+                                    <option>---Select a Category---</option>
+                                    <option>Development</option>
+                                    <option>Maintenence</option>
+                                    <option>Production Support</option>
+                                    <option>Client Meetings</option>
+                                    <option>Bug Fixing</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Image Upload :</label>
+                            <input class="form-control-file" type="file">
+                            <small>Max Size : 3 MB</small>
+                        </div>
+                        <div class="form-group">
+                            <labela>Description :</label>
+                                <textarea class="form-control" name="" rows="5"></textarea>
+                        </div>
+                    </form>
+                    <a href="#" class="btn btn-primary">ADD TASK</a>
+                    <button type="close" class=" btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="addcategory" class="modal fade">
+        <div class="modal-dialog modal-lg animated jello">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">ADD CATEGORY</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form>
+                        <div class="form-group">
+                            <label>Category Name :</label>
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label>Category Date :</label>
+                            <input class="form-control" type="date" placeholder="Select a date">
+                        </div>
+                    </form>
+                    <a href="#" class="btn btn-primary">ADD CATEGORY</a>
+                    <button type="close" class=" btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="addemployee" class="modal fade">
+        <div class="modal-dialog modal-lg animated jackInTheBox">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title">ADD EMPLOYEE</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form>
+                        <div class="form-group">
+                            <label>Employee Name :</label>
+                            <input class="form-control" type="text" placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email :</label>
+                            <input class="form-control" type="email" placeholder="Enter your E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label>Password :</label>
+                            <input class="form-control" type="password" placeholder="Password">
+                        </div>
+                    </form>
+                    <a href="#" class="btn btn-primary">ADD CATEGORY</a>
+                    <button type="close" class=" btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Maincontent Section -->
+    <section class="p-3">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-9 animated zoomIn delay-2s">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white">
+                            <h3>Current Tasks</h3>
+                        </div>
+                        <div class="card-body bg-light">
+                            <table class="table table-responsive table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>SNO</th>
+                                        <th>NAME</th>
+                                        <th>EMAIL</th>
+                                        <th>TASK</th>
+                                        <th>LEVEL</th>
+                                        <th>CATEGORY</th>
+                                        <th>DETAILS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Abu Tharik Rasool</td>
+                                        <td>tharikabu007@gmail.com</td>
+                                        <td>Web Development</td>
+                                        <td>Medium</td>
+                                        <td>Development</td>
+                                        <td><a href="#" class="btn btn-sm">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Abu</td>
+                                        <td>tharikabu007@gmail.com</td>
+                                        <td>Web Development</td>
+                                        <td>Medium</td>
+                                        <td>Development</td>
+                                        <td><a href="#" class="btn btn-sm">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td> Rasool</td>
+                                        <td>tharikabu007@gmail.com</td>
+                                        <td>Web Development</td>
+                                        <td>Medium</td>
+                                        <td>Development</td>
+                                        <td><a href="#" class="btn btn-sm">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rasool</td>
+                                        <td>tharikabu007@gmail.com</td>
+                                        <td>Web Development</td>
+                                        <td>Medium</td>
+                                        <td>Development</td>
+                                        <td><a href="#" class="btn btn-sm">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Rasool</td>
+                                        <td>tharikabu007@gmail.com</td>
+                                        <td>Web Development</td>
+                                        <td>Medium</td>
+                                        <td>Development</td>
+                                        <td><a href="#" class="btn btn-sm">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Rasool</td>
+                                        <td>tharikabu007@gmail.com</td>
+                                        <td>Web Development</td>
+                                        <td>Medium</td>
+                                        <td>Development</td>
+                                        <td><a href="#" class="btn btn-sm">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Abu</td>
+                                        <td>tharikabu007@gmail.com</td>
+                                        <td>Web Development</td>
+                                        <td>Medium</td>
+                                        <td>Development</td>
+                                        <td><a href="#" class="btn btn-sm">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Tharik</td>
+                                        <td>tharikabu007@gmail.com</td>
+                                        <td>Web Development</td>
+                                        <td>Medium</td>
+                                        <td>Development</td>
+                                        <td><a href="#" class="btn btn-sm">Details</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 my-2 animated slideInUp delay-3s">
+                    <div class="card ">
+                        <div class="card-body bg-primary text-white">
+                            <div class="row">
+                                <div class="col d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-tasks fa-5x"></i>
+                                </div>
+                                <div class="col">
+                                    <p class="display-3">08</p>
+                                    <p class="text-center font-weight-bold">Tasks</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class=" font-weight-bold text-primary">View Details &nbsp;<i
+                                    class="fa fa-arrow-circle-right text-primary"></i></a>
+                        </div>
+                    </div>
+                    <div class="card mt-5">
+                        <div class="card-body bg-success text-white">
+                            <div class="row">
+                                <div class="col d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-tasks fa-5x"></i>
+                                </div>
+                                <div class="col">
+                                    <p class="display-3">06</p>
+                                    <p class="text-center font-weight-bold">Categories</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class=" font-weight-bold text-success">View Details &nbsp;<i
+                                    class="fa fa-arrow-circle-right text-success"></i></a>
+                        </div>
+                    </div>
+                    <div class="card mt-5">
+                        <div class="card-body bg-warning text-white">
+                            <div class="row">
+                                <div class="col d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-tasks fa-5x"></i>
+                                </div>
+                                <div class="col">
+                                    <p class="display-3">08</p>
+                                    <p class="text-center font-weight-bold">Employees</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class=" font-weight-bold text-warning">View Details &nbsp;<i
+                                    class="fa fa-arrow-circle-right text-warning"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="p-2 bg-dark">
+        <div class="container">
+            <div class="text-center text-white">
+                <p class="h3">Copyright © 2020 , tharikabu007@gmail.com</p>
+                <p>All Rights Reserved</p>
+                <p>Developed & Maintained by <a href="#" class=" text-danger">Abu Tharik Rasool</a> </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JS Files -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+</html>

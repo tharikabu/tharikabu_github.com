@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Dasboard Menu -->
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-danger"><i class="fa fa-volleyball-ball text-white text-danger"></i> ABU
+                THARIK</a>
+            <button class="navbar-toggler" data-target="#uinav" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="uinav" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html"><i class="fa fa-chart-line text-muted"></i> Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Tasks.html"><i class="fa fa-tasks text-muted"></i> Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Categories.html"><i class="fa fa-sitemap text-muted"></i>
+                            Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Employees.html"><i class="fa fa-users text-muted"></i> Employees</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link" href="#" class="dropdown-toggle" data-toggle="dropdown"
+                            data-target="#drp"><i class="fa fa-sign-in-alt text-muted"></i> Tharik &nbsp; <i
+                                class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-menu" id="drp">
+                            <a href="Profile.html" class=" dropdown-item"><i
+                                    class="fa fa-user-tag"></i>&nbsp;&nbsp;Profile</a>
+                            <a href="Settings.html" class=" dropdown-item"><i
+                                    class="fa fa-user-cog"></i>&nbsp;&nbsp;Settings</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Logout.html"><i class="fa fa-sign-out-alt text-muted"></i> LogOut</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Dashboard Section -->
+    <section class="p-3 bg-teal">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 animated flipInY">
+                    <h2 class=" text-white"><i class="fa fa-user-tag text-white"></i> Profile</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Button Section -->
+    <section class="p-3 bg-light">
+        <div class="container">
+            <div class="row animated flipInX">
+                <div class="col-md-3">
+                    <a href="Index.html" class="btn btn-primary btn-block" data-target="#addtask" data-toggle="modal"><i
+                            class="fa fa-arrow-circle-left text-white"></i> DASHBOARD</a>
+                </div>
+                <div class="col-md-3 ml-auto">
+                    <a href="#" class="btn btn-success btn-block" data-target="#updatepassword" data-toggle="modal"><i
+                            class="fa fa-lock text-white"></i> UPDATE PASSWORD</a>
+                </div>
+                <div class="col-md-3 ">
+                    <a href="Index.html" class="btn btn-warning btn-block" data-target="#addemployee"
+                        data-toggle="modal"><i class="fa fa-times text-white"></i> DELETE ACCOUNT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Section -->
+    <div id="updatepassword" class="modal fade">
+        <div class="modal-dialog modal-lg animated jackInTheBox">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">UPDATE PASSWORD</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form>
+                        <div class="form-group">
+                            <label>Old Password :</label>
+                            <input class="form-control" type="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label>New Password :</label>
+                            <input class="form-control" type="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password :</label>
+                            <input class="form-control" type="password" placeholder="Password">
+                        </div>
+                    </form>
+                    <a href="#" class="btn btn-success">UPDATE PASSWORD</a>
+                    <button type="close" class=" btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main content Section -->
+    <section class="p-3">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-9 animated zoomIn">
+                        <div class="card">
+                            <div class="card-header bg-teal text-white">
+                                <h3>About Me</h3>
+                            </div>
+                            <div class="card-body bg-light">
+                                <div class="card p-4">
+                                    <h2 class=" font-italic">ABU THARIK RASOOL</h2>
+                                </div>
+                                <div class="card p-4 mt-2">
+                                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                                        distinctio eum exercitationem ipsam itaque iure modi non voluptatibus.
+                                        Consequuntur, praesentium, repellendus. Consectetur dicta dolorem nostrum quos
+                                        vel voluptates? Similique, voluptate!</p>
+                                </div>
+                                <div class="card p-4 mt-2">
+                                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                        dolor doloribus ducimus eius itaque libero quasi, quis quod repellendus ullam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h3>Thank You.....!</h3>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-3 animated slideInUp">
+                    <div class="card ">
+                        <div class="card-header bg-teal text-white">
+                            <h3>Abu Tharik</h3>
+                        </div>
+                        <div class="card-body text-white text-center">
+                            <i class="fa fa-user-circle text-teal fa-10x"></i>
+                            <a href="#" class="btn btn-info text-dark btn-block mt-4"><i class="fa fa-edit"></i> Edit Profile</a>
+                            <a href="#" class="btn btn-grey text-white btn-block mt-4"><i class="fa fa-trash-alt"></i> Delete Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="p-2 bg-dark">
+        <div class="container">
+            <div class="text-center text-white">
+                <p class="h3">Copyright © 2020 , tharikabu007@gmail.com</p>
+                <p>All Rights Reserved</p>
+                <p>Developed & Maintained by <a href="#" class=" text-danger">Abu Tharik Rasool</a> </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JS Files -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+</html>
