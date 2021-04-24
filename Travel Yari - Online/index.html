@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Travel Yari</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS Files -->
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark bg-teal scrolling-navbar scrollable">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <i class=" fa fa-plane-departure"></i> Travel Yari</a>
+            <button class=" navbar-toggler" data-toggle="collapse" data-target="#navtog">
+                <span class=" navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navtog">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item px-2"><a href="#" class=" nav-link">Home</a></li>
+                    <li class="nav-item px-2"><a href="#section" class=" nav-link">Search</a></li>
+                    <li class="nav-item px-2"><a href="#popularplaces" class=" nav-link">Visiting</a></li>
+                    <li class="nav-item px-2"><a href="#gallery" class=" nav-link">Gallery</a></li>
+                    <li class="nav-item px-2"><a href="#contact" class=" nav-link">Contact</a></li>
+                </ul>
+                <div>
+                    <input type="text" class="form-control">
+                </div>
+                <div>
+                    <button type="submit" class="btn-danger form-control">Search</button>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Slider Section -->
+    <section>
+        <div id="my-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#my-carousel" data-slide-to="1"></li>
+                <li data-target="#my-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img class="w-100 " src="images/slider_one.jpg" alt="">
+                    <div class="carousel-caption caption text-left animated zoomIn delay-1s">
+                        <h1 class="display-4">Feel The Joy</h1>
+                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis aperiam
+                            dignissimos est ut
+                            corporis harum!lorem5
+                        </p>
+                        <button type="submit" class="btn btn-teal">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img class="w-100" src="images/slider_two.jpg" alt="">
+                    <div class="carousel-caption caption text-center animated jello delay-1s">
+                        <h1 class="display-4">Ultimate Destination</h1>
+                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis aperiam
+                            dignissimos est ut
+                            corporis harum!lorem5
+                        </p>
+                        <button type="submit" class="btn btn-teal">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100 " src="images/slider_three.jpg" alt="">
+                    <div class="carousel-caption caption text-right animated jackInTheBox delay-1s">
+                        <h1 class="display-4">Be Relaxed in nature</h1>
+                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis aperiam
+                            dignissimos est ut
+                            corporis harum!lorem5
+                        </p>
+                        <button type="submit" class="btn btn-teal">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#my-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#my-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+    <!-- Search Destination -->
+    <section class="p-4 main bg-teal" id="section">
+        <div class="container">
+            <p class="text-white display-4">Search Your Destination</p>
+            <p class="text-white lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum eaque magnam
+                molestiae nostrum officiis pariatur placeat quibusdam totam voluptatem!</p>
+            <div>
+                <input type="search" class="form-control w-50" placeholder="Search">
+            </div>
+    </section>
+    <!-- Location and other details -->
+    <section class="p-4 bg-dark">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-4 mt-3">
+                    <div class="card text-center p-3">
+                        <i class="fa fa-location-arrow fa-4x text-teal"></i>
+                        <h2>Pick Location</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorum facere iusto libero nemo
+                            obcaecati quos ratione repellendus sit voluptatum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 ">
+                    <div class="card text-center p-3">
+                        <i class="fa fa-building fa-4x text-teal"></i>
+                        <h2>Shop Travel</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorum facere iusto libero nemo
+                            obcaecati quos ratione repellendus sit voluptatum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 ">
+                    <div class="card text-center p-3">
+                        <i class="fa fa-plane fa-4x text-teal"></i>
+                        <h2>Fly Cheap</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorum facere iusto libero nemo
+                            obcaecati quos ratione repellendus sit voluptatum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Card Area -->
+    <section class="cardarea p-2" id="popularplaces">
+        <div class="container">
+            <div class="text-center">
+                <p class="display-4 "><span class="text-teal">Popular</span> Places</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, excepturi!</p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4 mt-3">
+                    <div class="card cardbg">
+                        <img src="images/card_1.jpg" class=" card-img" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Munnar, Kerala</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                commodi dolorem error esse, hic id illum ipsa iusto maxime minima minus numquam quam
+                                quia reiciendis sint tenetur, totam unde voluptate.</p>
+                            <button type="submit" class="btn btn-danger btn-sm">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div class="card cardbg">
+                        <img src="images/card_2.jpg" class=" card-img" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Alappuza,Kerala</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                commodi dolorem error esse, hic id illum ipsa iusto maxime minima minus numquam quam
+                                quia reiciendis sint tenetur, totam unde voluptate.</p>
+                            <button type="submit" class="btn btn-danger btn-sm">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div class="card cardbg">
+                        <img src="images/card_3.jpg" class=" card-img" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Pondicherry</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                commodi dolorem error esse, hic id illum ipsa iusto maxime minima minus numquam quam
+                                quia reiciendis sint tenetur, totam unde voluptate.</p>
+                            <button type="submit" class="btn btn-danger btn-sm">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 d-flex align-items-center justify-content-center">
+                <button type="Submit" class="btn btn-dark btn-lg"><i class="fa fa-play"></i>&nbsp; START
+                    BOOKING</button>
+            </div>
+        </div>
+    </section>
+    <!-- Follow Area -->
+    <section class="bg-teal p-4">
+        <div class="container">
+            <div class=" text-center text-white">
+                <p class="display-4">Follow Travel Yari</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, optio.</p>
+                <div class="d-flex justify-content-between">
+                    <i class="fab fa-facebook-square fa-4x"></i>
+                    <i class="fab fa-youtube fa-4x"></i>
+                    <i class="fab fa-twitter fa-4x"></i>
+                    <i class="fab fa-google-plus fa-4x"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="gallery p-2 " id="gallery">
+        <div class="container">
+            <div class="text-center">
+                <p class="display-4">Photo Gallery</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, repudiandae.</p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/gallery_1.jpg" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/gallery_2.jpg" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/gallery_3.jpg" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/gallery_4.jpg" class="card-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/gallery_5.jpg" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/gallery_6.jpg" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/gallery_7.jpg" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/gallery_8.jpg" class="card-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/gallery_9.jpg" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/gallery_10.jpg" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/gallery_11.jpg" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/gallery_12.jpg" class="card-img" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="p-4" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-3">
+                    <div class="card bg-teal text-center text-white p-4">
+                        <i class="fa fa-envelope fa-4x"></i>
+                        <h3>Contact For Booking</h3>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque excepturi itaque
+                            praesentium. Accusamus beatae distinctio dolore eum iure magnam maiores maxime, natus quam
+                            repellendus saepe sint suscipit temporibus vitae voluptates?</p>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item h3">Location</li>
+                        <li class="list-group-item">Travel Yari Pvt Ltd</li>
+                        <li class="list-group-item">Jubilee Hills , Hyderabad</li>
+                        <li class="list-group-item">Telangana , India</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="card">
+                        <div class="card-header bg-teal text-white text-center">
+                            <h3>Contact Us</h3>
+                        </div>
+                        <div class="card-body bg-light">
+                            <form action="#">
+                                <div class="form-group">
+                                    <input id="txt" class="form-control" type="text" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input id="email" class="form-control" type="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input id="num" class="form-control" type="number" placeholder="Mobile Number">
+                                </div>
+                                <div class="form-group">
+                                    <input id="search" class="form-control" type="search" placeholder="Loved Destination">
+                                </div>
+                                <div class="form-group">
+                                    <textarea rows="5" class="form-control" placeholder="Your Description"></textarea>
+                                </div>
+                                <div class="d-flex align-items-end justify-content-end">
+                                    <button type="submit" class="btn btn-teal">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="p-3 bg-teal">
+        <div class="container">
+            <div class="text-center text-white mt-2 mb-4">
+                <h3>Copyright © 2020 , Travel Yari Pvt Ltd</h3>
+                <p>All Rights Reserved</p>
+                <p>Developed & Maintained by Abu Tharik Rasool</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Javascript Files -->
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script>
+        // var myCarousel = document.querySelector('#my-carousel')
+        // var carousel = new bootstrap.Carousel(my - carousel, {
+        //     interval: 2000,
+        // })
+    </script>
+</body>
+
+</html>
