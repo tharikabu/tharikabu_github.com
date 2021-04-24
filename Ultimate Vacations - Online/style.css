@@ -1,0 +1,111 @@
+html{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn1
+{
+    border-radius: 50px;
+}
+#txt
+{
+    height: 35px;
+}
+.navbar
+{
+    padding: px; 
+    color: white;
+}
+ul li a
+{
+    color: white;
+}
+.nav-item
+{
+    display: flex;
+    align-items: center;
+}
+.navbar-brand
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.top-nav-collapse
+{
+    background-color: black;
+    /* padding: 0.75rem; */
+}
+.landing-div
+{
+    background: url(../pictures/bg-image.jpg) scroll no-repeat center;
+    height: 100vh;
+    background-size: cover;  
+}
+.landing-wrapper
+{
+    display: flex;
+    /* flex-direction: column; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0,0.6);
+    height: 100vh;
+    color: white;
+}
+.img1
+{
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px black;
+}
+.cardimg
+{
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.card-title
+{
+    position: absolute;
+    color: white;
+    top: 10px;
+    left: 10px;
+}
+.card-info
+{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 0;
+    background-color:red;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    width: 40%;
+    text-align: right;
+    
+}
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.card:hover .card-info{
+    background-color: orange;
+    width: 45%;
+    transition: 0.5s;
+}
+.main-footer
+{
+    background: url(../pictures/footer-image.jpg) no-repeat scroll center;
+    height: 45vh;
+    background-size: cover;
+    color: white;
+    margin-top: 20px;
+}
+.footer-wrapper
+{
+    background-color: rgba(0, 0, 0,0.6);
+    height: 45vh;
+    padding: 40px;
+}
