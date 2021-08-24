@@ -1,0 +1,121 @@
+/* ADD YOUR CUSTOM STYLES */
+html{
+    scroll-behavior: smooth;
+}
+.hr
+{
+    background-color: brown;
+    width: 600px;
+    height: 2px;
+}
+.bg-teal , .btn-teal{
+    background-color: #236666 !important;
+    color: white;
+}
+.text-teal{
+    color: #236666 !important;
+}
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+}
+.carousel .carousel-indicators li {
+    width: 30px;
+    height: 5px;
+    cursor: pointer;
+    border-radius: 0;
+}
+.caption
+{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+}
+.carousel-caption
+{
+    bottom: 200px;
+}
+.cardbg
+{
+    box-shadow: 0 0 10px 3px black;
+}
+.sliderimg
+{
+    height: 580px;
+}
+.card-img2
+{
+    height: 300px;
+}
+.donateimg
+{
+    background-image: url(../../images/donatepage.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper
+{
+    background: rgba(0, 0, 0, 0.7);
+    width: 60%;
+    height: 500px;
+}
+.address
+{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+.btn-teal:hover
+{
+    background-color: #30b8b8 !important;
+    color: white;
+}
+.btn-danger:hover
+{
+    background-color: rgb(255, 123, 75) !important;
+    color: white;
+}
+.footicon a
+{
+    color: white;
+}
+.footicon a:hover
+{
+    color: black;
+}
+.snmlogo
+{
+    width: 25px;
+    height: 25px;
+}
+.navbar-brand{
+    transition: 0.9s;
+}
+.navbar-brand:hover
+{
+    transform: scale(1.2);
+    color: rgba(255, 255, 255, 0.726) !important;
+}
+@media (max-width:1100px){
+    .carousel-caption{
+        bottom: 40px;
+    }
+    .carousel-caption h1{
+        font-size: 15px;
+    }
+    .carousel-caption p{
+        font-size: 5px;
+    }
+    .caption
+    {
+        padding: 10px;
+    }
+}  
+
+
+
