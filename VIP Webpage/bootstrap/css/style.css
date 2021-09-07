@@ -1,0 +1,351 @@
+/* ADD YOUR CUSTOM STYLES */
+html{
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI';
+}
+body
+{
+    font-family: 'Segoe UI';
+}
+.navbar-nav li a , .navbar-brand
+{
+    color: black !important;
+    font-weight: bold;
+}
+.navbar-nav li a:hover, .navbar-brand:hover
+{
+    color: rgba(0, 0, 0, 0.493) !important;
+
+}
+.hr
+{
+    background-color: #fff;
+    box-shadow: 0 0px 15px 5px #0cebeb;
+    height: 1px;
+    width: 90%;
+    margin-top: 100px;
+}
+.hr1
+{
+    background-color: black;
+    box-shadow: 0 0px 15px 5px black;
+    height: 1px;
+    width: 60%;
+    margin-top: 100px;
+}
+.boxshadow
+{
+    box-shadow: 0 0px 15px 5px #0cebeb;
+}
+.br
+{
+    border: 2px solid white;
+    width: 100%;
+    min-height: 110vh;
+}
+.br1
+{
+    width: 100%;
+    /* min-height: 90vh; */
+    /* border: 2px solid black; */
+    background: #0cebeb;
+    background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+}
+.br3
+{
+    width: 100%;
+    /* min-height: 100vh; */
+    /* border: 2px solid black; */
+    background: #0cebeb;
+    background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+}
+.br2
+{
+    width: 100%;
+    /* min-height: 110vh; */
+    background: black;
+}
+.bg-teal , .btn-teal{
+    background-color: #236666 !important;
+    color: white;
+}
+.text-teal{
+    color: #236666 !important;
+}
+.logo
+{
+    width: 30px;
+    height: 30px;
+}
+.mslogo
+{
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+}
+.mstext
+{
+    width: 150px;
+    height: 80px;
+    /* margin-left: 2px !important; */
+}
+.bg-cyan1
+{
+    background: #0cebeb;
+    background: linear-gradient(to left, #29ffc6, #20e3b2, #0cebeb);
+
+}
+.herotext p
+{
+    font-size: 22px;
+}
+.herotext2
+{
+    margin-top: 250px;
+}
+.herotext2 p
+{
+    font-size: 32px;
+    font-weight: bold;
+}
+.herotext3 span
+{
+    font-size: 32px;
+    font-weight: bold;
+}
+.about h1
+{
+    color: white;
+}
+.about span
+{
+    color: #1dc8cd;
+}
+
+.abouttext p
+{
+    color: #bfbfbf; 
+    font-size: 24px;
+    font-weight: 500;
+}
+.liststyle li
+{
+    line-height: 80px;
+    font-size: 28px;
+    font-weight: 500;
+    list-style-type: disc;
+    color: #1dc8cd;
+    list-style-position: outside;
+}
+.highlight
+{
+    color: #1dc8cd;
+}
+.highlighttext h2
+{
+    color: #1dc8cd;
+    font-weight: bold;
+}
+.highlighttext p
+{
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    padding-top: 5px;
+    margin-right: 50px;
+}
+.configure p
+{
+    color: white;
+    /* font-size: 50px; */
+    font-weight: bold;
+    padding-top: 40px;
+}
+.liststyle2 li
+{
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+    padding-top: 18px;
+    list-style-type: disc;
+}
+.certificate
+{
+    width: 300px;
+    height: 200px;
+}
+.register :nth-child(1), .register :nth-child(3), .register :nth-child(4)
+{
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+.register :nth-child(2)
+{
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.questions p
+{
+    color: white;
+    /* font-size: 50px; */
+    font-weight: bold;
+}
+.mailus p
+{
+    font-size: 25px;
+    font-weight: 500;
+}
+.fingerprint:hover , .cube:hover, .benefits:hover, .benefits2:hover
+{
+    box-shadow: 0 0px 20px 5px #0cebeb;
+    transition: 0.5s;
+}
+
+
+/* Responsive Code */
+
+@media (min-width:0) and (max-width:1000px)
+{
+    .globe
+    {
+        display: none;
+    }
+}
+
+@media (min-width:321px) and (max-width:500px)
+{
+    .display-4
+    {
+        font-size: 40px;
+    
+    }
+    .herotext2 p
+    {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .herotext3 span
+    {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .highlighttext h2
+    {
+        color: #1dc8cd;
+        font-weight: bold;
+    }
+    
+}
+@media (min-width:0) and (max-width:1000px)
+{
+    .datalogo
+    {
+        display: none;
+    }
+}
+@media (min-width:0) and (max-width:760px)
+{
+    .fingerprint, .cube, .configurelogo , .benefits, .benefits2
+    {
+        display: none;
+    }
+    .highlighttext, .highlighttext p, .highlight ,.about
+    {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .heading
+    {
+        margin-top: 24px;
+    }
+    .br2
+    {
+        padding-bottom: 50px;
+    }
+    .cert
+    {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .qrlogo
+    {
+        text-align: center;
+    }
+    
+}
+@media (min-width:0px) and (max-width:629px)
+{
+    .liststyle2 li
+    {
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        padding-top: 18px;
+        list-style-type: disc;
+    }
+}
+@media (min-width:630px) and (max-width:770px)
+{
+    .liststyle2 li
+    {
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 18px;
+        list-style-type: disc;
+        
+    }
+}
+
+@media (min-width:321px) and (max-width:379px)
+{
+    .highlighttext h2
+    {
+        font-size: 24px;
+    }
+    .highlighttext p
+    {
+        font-size: 18px;
+    }
+}
+@media (min-width:0px) and (max-width:320px)
+{
+    .highlighttext h2
+    {
+        font-size: 20px;
+    }
+    .highlighttext p
+    {
+        font-size: 14px;
+    }
+    .display-4
+    {
+        font-size: 30px;
+    }
+    .liststyle li
+    {
+        line-height: 80px;
+        font-size: 18px;
+        font-weight: 500;
+        list-style-type: disc;
+        color: #1dc8cd;
+        list-style-position: outside;
+    }
+    .card-body p
+    {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:321px) and (max-width:450px)
+{
+    .card-body p
+    {
+        font-size: 22px;
+    }
+    
+}
